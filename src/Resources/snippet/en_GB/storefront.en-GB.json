@@ -1,0 +1,8 @@
+{
+    "checkout": {
+        "custom-line-item-blocked": "Please add the minimum quantity of items to the cart"
+    },
+    "error": {
+        "custom-line-item-blocked": "Please add the minimum quantity of items to the cart"
+    }
+}

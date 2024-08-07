@@ -1,0 +1,8 @@
+{
+    "checkout": {
+        "custom-line-item-blocked": "Bitte legen Sie die Mindestmenge an Artikeln in den Warenkorb"
+    },
+    "error": {
+        "custom-line-item-blocked": "Bitte legen Sie die Mindestmenge an Artikeln in den Warenkorb"
+    }
+}
