@@ -1,0 +1,27 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget.html.twig' %}
+
+{# {% block page_product_detail_price_content %}
+    {% set advancedPrice = page.product.calculatedPrices %}
+    {% set data = {
+        'advancedPrice': advancedPrice,
+        'unitPrice': price.unitPrice
+    } %}
+    {{ parent() }}
+    <template data-custom-plugin="true" data-custom-stylesdrop-options="{{ data|json_encode }}"></template>
+{% endblock %} #}
+
+{% block page_product_detail_buy_container %}
+    {% set price = page.product.calculatedPrice %}
+
+    {% if page.product.calculatedPrices|length >= 1 %}
+        {% set price = page.product.calculatedPrices.first %}
+    {% endif %}
+    
+    {% set advancedPrice = page.product.calculatedPrices %}
+    {% set data = {
+        'advancedPrice': advancedPrice,
+        'unitPrice': price.unitPrice
+    } %}
+    {{ parent() }}
+    <template data-custom-plugin="true" data-custom-stylesdrop-options="{{ data|json_encode }}"></template>
+{% endblock %}

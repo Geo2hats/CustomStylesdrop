@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Basic settings</title>
+        <title lang="de-DE">Grundeinstellungen</title>
+
+        <component name="sw-field">
+            <name>whitelist</name>
+            <type>string</type>
+            <label>Whitelist</label>
+            <label lang="de-DE">Whitelist</label>
+            <defaultValue>*</defaultValue>
+            <helpText>Enter the article numbers here for which the behavior should be enabled (Example: SW10005, SW20005, SW3*). Wildcards with an asterisk (*) are possible.</helpText>
+            <helpText lang="de-DE">Trage hier die Artikelnummern ein, für die das Verhalten aktiviert werden soll (Beispiel: SW10005, SW20005, SW3*). Wildcards mit Stern (*) sind möglich.</helpText>
+        </component>
+
+        <component name="sw-field">
+            <name>blacklist</name>
+            <type>string</type>
+            <label>Blacklist</label>
+            <label lang="de-DE">Blacklist</label>
+            <helpText>Enter the article numbers here for which the behavior should be disabled (Example: SW10005, SW20005, SW3*). Wildcards with an asterisk (*) are possible.</helpText>
+            <helpText lang="de-DE">Trage hier die Artikelnummern ein, für die das Verhalten deaktiviert werden soll (Beispiel: SW10005, SW10005, SW2*). Wildcards mit Stern (*) sind möglich.</helpText>
+        </component>
+
+        <component name="sw-field">
+            <name>groupByPrice</name>
+            <type>bool</type>
+            <label>Only count variants with the same price</label>
+            <label lang="de-DE">Nur Varianten mit gleichen Preisen zusammenzählen</label>
+            <defaultValue>true</defaultValue>
+            <helpText>If active, variants with different prices are each divided into a price group. Deactivate so that all variants, regardless of price, should be added together.</helpText>
+            <helpText lang="de-DE">Wenn aktiv, werden Varianten mit unterschiedlichen Preisen jeweils in eine Staffelpreisgruppe eingeteilt. Deaktivieren, damit alle Varianten, unabhängig vom Preis, zusammengerechnet werden sollen.</helpText>
+        </component>
+    </card>
+</config>
