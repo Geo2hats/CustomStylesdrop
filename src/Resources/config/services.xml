@@ -12,5 +12,8 @@
             <argument type="string">MaxiaCrossVariantDiscounts6.config</argument>
             <tag name="shopware.cart.processor" priority="4950" />
         </service>
+        <service id="CustomStylesdrop\Cart\Checkout\CustomCartValidator">
+            <tag name="shopware.cart.validator"/>
+        </service>
     </services>
 </container>
